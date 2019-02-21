@@ -24,11 +24,6 @@
                   <i class="fas fa-check"></i>
                 </span>
               </a>
-              <!-- <a class="button is-danger is-pulled-right">
-                <span class="icon is-small">
-                  <i class="fas fa-trash"></i>
-                </span>
-              </a>-->
             </div>
           </transition-group>
         </div>
@@ -38,17 +33,9 @@
           <b-input v-model="selected.tittle" :disabled="!enableControl"></b-input>
         </b-field>
 
-        <!-- <b-field label="Completed">
-            <b-select placeholder="Is todo completed ?" v-model="selected.completed" :disabled="!enableControl" >
-                <option :value=true >Yes</option>
-                <option :value=false >No</option>
-            </b-select>
-        </b-field>-->
         <a class="button is-primary" @click="createTodo()" :disabled="isAdd">Tambah</a>
         <a class="button is-info" @click="saveTodo()" :disabled="!isAdd ">Simpan</a>
         <div>{{selected}}</div>
-        <!-- <a class="button is-warning" @click="editTodo()" :disabled="this.selected != {}">Ubah</a> -->
-        <!--  -->
       </div>
     </div>
   </div>
